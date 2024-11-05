@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!--font-->
+    <title>Eduardo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><!--Presentation, Skillset, Projects and Contact-->
+        <div>
+            <div class="tab-container">
+                <input type="radio" name="tab" id="tab1" class="tab tab--1" checked value="1">
+                <label class="tab_label1" for="tab1">Presentation</label>
+
+                <input type="radio" name="tab" id="tab2" class="tab tab--2" value="2">
+                <label class="tab_label2" for="tab2">Skillset</label>
+
+                <input type="radio" name="tab" id="tab3" class="tab tab--3" value="3">
+                <label class="tab_label3" for="tab3">Projects</label>
+
+                <input type="radio" name="tab" id="tab4" class="tab tab--4" value="4">
+                <label class="tab_label4" for="tab4">Contact</label>
+                <div class="indicator" id="indicator"></div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div id="presentation">
+            <div class="presentation">
+                <div class="presentationNameAndDescription">
+                    
+                    <div class="presentationName">
+                        
+                        <h2>
+                            Hola!
+                        </h2>
+                        <h1>
+                            Soy Eduardo
+                        </h1>
+                    </div>
+                    <div class="presentationMe">
+                        <span>
+                            Front-End Developer
+                        </span>
+                        <div class="aboutme">
+                            <p>Actualmente trabajando con JavaScript.</p>
+                            <p>Aprendiendo C++ por mi cuenta.</p>
+                            <p>Interesado en Bases de Datos, Kernel's y Sistemas Operativos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="photoProfile">
+                    <img src="assets/img/photoProfile.jpg" class="photoProfileIMG" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="skillset">
+            <div class="skillset">
+                <table> <!--crear una tabla para cada categoría-->
+                    <tr>
+                        <th style="justify-content: left; display: flex;">categoria</th>
+                    </tr>
+                    <tr>
+                        <td>herramienta</td>
+                        <td>herramienta 2</td>
+                        <td>herramienta 3</td>
+                    </tr>
+                    <tr>
+                        <td>herramienta 4</td>
+                        <td>herramienta 5</td>
+                        <td>herramienta 6</td>
+                    </tr>
+                </table>
+                <div>
+                    <button>D</button>
+                </div>
+            </div>
+        </div>
+        <div id="projects">
+            <div class="projects">
+                <div class="article-div">
+                    <article>
+                        <img src="assets/img/projects/mamisato.jfif" alt="">
+                        <div>
+                            <h1>Pokémon Quest!</h1>
+                            <span>pokémon game quiz</span>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="assets/img/projects/mamisato.jfif" alt="">
+                        <div>
+                            <h1>image-toAscii</h1>
+                            <span>image generator in ascii format</span>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="assets/img/projects/mamisato.jfif" alt="">
+                        <div>
+                            <h1>convert-toImage</h1>
+                            <span>image format converter</span>
+                        </div>
+                    </article>
+                </div>
+                <!--
+                    <div class="div-svg-a">
+                        <svg x="0px" y="0px" viewBox="0 0 4.5 7">
+                            <path d="M 1 0 L 4 3 L 1 6 L 0 5 L 2 3 L 0 1 L 1 0"></path>
+                        </svg>
+                        <a class="moreProjects" href="">More projects!</a>
+                    </div>
+                -->
+            </div>
+        </div>
+        <div id="contact">
+            <div class="contact">
+                <h3>Eduardo Ruiz Guerrero</h3>
+                <p>Buenos Aires, Argentina.</p>
+                <div class="mailCopy">
+                    <svg x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48">
+                        <path d="M 18.5 5 C 15.480226 5 13 7.4802259 13 10.5 L 13 32.5 C 13 35.519774 15.480226 38 18.5 38 L 34.5 38 C 37.519774 38 40 35.519774 40 32.5 L 40 10.5 C 40 7.4802259 37.519774 5 34.5 5 L 18.5 5 z M 18.5 8 L 34.5 8 C 35.898226 8 37 9.1017741 37 10.5 L 37 32.5 C 37 33.898226 35.898226 35 34.5 35 L 18.5 35 C 17.101774 35 16 33.898226 16 32.5 L 16 10.5 C 16 9.1017741 17.101774 8 18.5 8 z M 11 10 L 9.78125 10.8125 C 8.66825 11.5545 8 12.803625 8 14.140625 L 8 33.5 C 8 38.747 12.253 43 17.5 43 L 30.859375 43 C 32.197375 43 33.4465 42.33175 34.1875 41.21875 L 35 40 L 17.5 40 C 13.91 40 11 37.09 11 33.5 L 11 10 z"></path>
+                    </svg>
+                    <p class="mail">eduardoruizguerrero@outlook.com</p>
+                </div>
+                <a href="https://www.linkedin.com/in/eduardo-ruiz-guerrero-92a685271/" target="_blank">Linkedin</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-div-background">
+        <div class="div-backgroundf"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

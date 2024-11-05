@@ -1,0 +1,235 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+body {
+  /*background-color: whitesmoke;*/
+  background-color: rgb(235, 235, 235);
+}
+
+/*  HEADER*//*
+.spanHeader {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  background-color: rgb(228, 228, 228);
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}*/
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+}
+
+/*  PRESENTATION*/
+.presentation {
+  display: flex;
+}
+/*p about me*/
+.aboutme {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 30em;
+}
+.photoProfileIMG {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.presentationMe > span {
+  font-weight: 600;
+}
+
+
+
+/*  SKILLSET*/
+.skillset {
+  display: grid;
+}
+td{
+  max-width: 10rem;
+  min-width: 10rem;
+  max-height: 35rem;
+  min-height: 35rem;
+  border: .05rem solid red;
+}
+.skillset > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+
+/*  PROJECTS*/
+.projects {
+  display: flex;
+  align-items: center;
+}
+.article-div {
+  display: flex;
+  gap: .5rem;
+}
+.projects > div > article {
+  /*border: .05rem solid black;*/
+  background-color: #dadadb;
+  border-radius: .5rem;
+  flex: 1 1;
+  flex-direction: row;
+  max-width: 15rem;
+  text-align: center;
+  padding-bottom: .5rem;
+}
+.projects > div > article > img {
+  border-radius: .5rem .5rem 0rem 0rem;
+}
+.div-svg-a {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+}
+.projects > div > svg {
+  max-width: 2rem;
+  cursor: pointer;
+}
+.projects > div > svg:hover + .moreProjects {
+  visibility: visible;
+}
+.div-svg-a > a {
+  visibility: hidden;
+}
+
+
+
+
+.projects > div > article > img {
+  width: 100%;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.projects > div > article > p {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  max-width: 10rem;
+}
+.projects > div > article > img,
+.projects > div > article > div > h1 {
+  margin-bottom: .5rem;
+}
+
+/*  CONTACT*/
+.mailCopy {
+  flex-direction: row-reverse;
+  display: flex;
+  justify-content: left;
+}
+
+.mailCopy > svg {
+  cursor: pointer;
+  align-items: center;
+}
+.mailCopy > svg:hover + .mail{
+  filter: drop-shadow(0rem 0rem .025rem black);
+}
+.mailCopy {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+.tab-container {
+  position: relative;
+  display: flex;
+  flex: 1 1;
+  align-items: center;
+  padding: 2px;
+  background-color: #dadadb;
+  border-radius: .5rem;
+  gap: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 30px;
+}
+.tab-container {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.tab-container > label {
+  z-index: 99999;
+  color: #888;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.indicator {
+  width: 140px;
+  height: 28px;
+  background: #ffffff;
+  position: absolute;
+  z-index: 9;
+  top: 2px;
+  left: 2px; /* AJUSTAR A GUSTO*/
+  border: 0.05rem solid rgba(0, 0, 0, 0.04);
+  filter: drop-shadow(0em 0em 0.5em rgba(0, 0, 0, 0.12));
+  border-radius: .5rem;
+  transition: all 0.2s ease-out;
+}
+
+.tab {
+  position: absolute;
+  z-index: 99999;
+  outline: none;
+  opacity: 0;
+}
+
+.tab_label {
+  width: 200px;
+  height: 28px;
+  z-index: 999;
+  display: flex;
+  border: 0;
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+.tab_label1, .tab_label2, .tab_label3, .tab_label4 {
+  border: 0;
+  max-width: 130px;
+  min-width: 130px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tab--1:checked ~ .indicator {
+  left: 2px;
+}
+.tab--2:checked ~ .indicator {
+  left: calc(160px + 2px);
+}
+.tab--3:checked ~ .indicator {
+  left: calc(160px * 2 + 2px);
+}
+.tab--4:checked ~ .indicator {
+  left: calc(160px * 3.025 + 2px);
+}
