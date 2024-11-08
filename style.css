@@ -74,56 +74,57 @@ td{
   display: flex;
   gap: .5rem;
 }
+.projects > div {
+  flex-wrap: wrap;
+}
 .projects > div > article {
-  /*border: .05rem solid black;*/
   background-color: #dadadb;
   border-radius: .5rem;
   flex: 1 1;
   flex-direction: row;
+  flex-wrap: wrap;
   max-width: 15rem;
-  text-align: center;
+  min-width: 15rem;
   padding-bottom: .5rem;
 }
 .projects > div > article > img {
   border-radius: .5rem .5rem 0rem 0rem;
-}
-.div-svg-a {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-
-}
-.projects > div > svg {
-  max-width: 2rem;
-  cursor: pointer;
-}
-.projects > div > svg:hover + .moreProjects {
-  visibility: visible;
-}
-.div-svg-a > a {
-  visibility: hidden;
-}
-
-
-
-
-.projects > div > article > img {
   width: 100%;
   object-fit: cover;
   display: flex;
   justify-content: center;
   align-content: center;
+  margin-bottom: .5rem;
 }
-.projects > div > article > p {
+.projects > div > article > div {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.projects > div > article > div > span {
   display: flex;
   text-align: center;
   flex-wrap: wrap;
   max-width: 10rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
 }
-.projects > div > article > img,
-.projects > div > article > div > h1 {
+.projects > div > article > div > a {
+  text-decoration: none;
+  color: rgb(29, 29, 29);
+  transition: all 0.5s ease ;
+}
+.projects > div > article > div > a:hover {
+  color: black;
+  /*transform: scale(1.05); hacer esto para el docker inferior*/
+}
+.projects > div > article > div > a > h1 {
   margin-bottom: .5rem;
 }
+
+
+
 
 /*  CONTACT*/
 .mailCopy {
@@ -157,6 +158,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 1.5rem;
+  -webkit-tap-highlight-color: transparent;
 }
 .tab-container {
   position: relative;
@@ -181,6 +183,15 @@ header {
   color: #888;
   font-weight: 300;
   font-size: 1rem;
+}
+
+@media (max-width: 720px) {
+  .tab-container {
+    transform: scale(0.5);
+  }
+  .projects > div {
+    transform: scale(0.8);
+  }
 }
 
 .indicator {
