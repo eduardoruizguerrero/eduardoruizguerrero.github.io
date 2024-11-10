@@ -31,3 +31,20 @@ radio.forEach(element => {
     element.addEventListener('change', updateState);
 })
 updateState();
+
+
+
+/*
+*
+*   copy mail on innerText
+*
+*/
+
+const mailCopy = document.getElementById("mailCopy");
+
+mailCopy.addEventListener('click', () => {
+    
+    const mail = document.getElementById("mail")
+    const texto = mail.innerText;
+    navigator.clipboard.writeText(texto);
+})
