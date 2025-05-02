@@ -25,7 +25,7 @@ function updateState(){
     });
     const selectedRadio = document.querySelector('input[type="radio"][name="tab"]:checked');
     const index = parseInt(selectedRadio.value) - 1;
-    articleR[index].style.display = "block";
+    articleR[index].style.display = "";
 }
 radio.forEach(element => {
     element.addEventListener('change', updateState);
