@@ -259,7 +259,7 @@ img, button {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 720px) {
     .presentation {
         display: grid;
         justify-content: center;
