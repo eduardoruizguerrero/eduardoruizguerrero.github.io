@@ -261,7 +261,19 @@ img, button {
 
 @media (max-width: 768px) {
     .presentation {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
         gap: 4rem;
+    }
+    .presentation > *:nth-child(1) {
+        order: 2;
+    }
+    .presentation > *:nth-child(2) {
+        order: 1;
+    }
+    .description {
+        max-width: 30rem;
     }
 }
 @media (max-width: 680px) {
