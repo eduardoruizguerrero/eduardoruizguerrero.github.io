@@ -255,6 +255,9 @@ img, button {
 .contact > section > a:hover {
     color: rgb(63, 85, 109);
 }
+.socialMedia {
+    margin-top: .5rem;
+}
 
 
 
