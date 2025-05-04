@@ -279,7 +279,7 @@ img, button {
         max-width: 30rem;
     }
 
-    .projects {
+    .projects, .skillset {
         margin-bottom: 1.5rem;
     }
 }
