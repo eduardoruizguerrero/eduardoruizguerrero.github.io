@@ -204,7 +204,6 @@ img, button {
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
-    margin-bottom: 1.5rem;
 }
 .projects > section {
     display: grid;
@@ -278,6 +277,10 @@ img, button {
     }
     .description {
         max-width: 30rem;
+    }
+
+    .projects {
+        margin-bottom: 1.5rem;
     }
 }
 @media (max-width: 680px) {
