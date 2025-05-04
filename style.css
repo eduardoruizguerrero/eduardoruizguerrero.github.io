@@ -204,6 +204,7 @@ img, button {
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
+    margin-bottom: 1.5rem;
 }
 .projects > section {
     display: grid;
