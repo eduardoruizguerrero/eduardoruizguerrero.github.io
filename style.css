@@ -239,11 +239,11 @@ img, button {
   flex-direction: row-reverse;
   gap: .5rem;
 }
-.mailSection > svg {
+.mailSection > section > svg {
     cursor: pointer;
     align-items: center;
 }
-.mailSection > svg:active + .mail {
+.mailSection > section > svg:active + .mail {
     color: rgb(50, 50, 50);
 }
 .contact > section > a {
