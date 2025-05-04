@@ -40,7 +40,7 @@ updateState();
 *
 */
 
-const mailCopy = document.getElementById("mailCopy");
+const mailCopy = document.getElementById("mailCopySvg");
 
 mailCopy.addEventListener('click', () => {
     
